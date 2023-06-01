@@ -1,0 +1,2 @@
+C:\Users\HP\source\repos\LaBa_3\LaBa_3\obj\Debug\LaBa_3.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\LaBa_3\LaBa_3\obj\Debug\LaBa_3.csproj.CoreCompileInputs.cache

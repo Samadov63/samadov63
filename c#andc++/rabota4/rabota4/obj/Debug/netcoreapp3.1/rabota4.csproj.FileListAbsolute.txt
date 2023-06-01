@@ -1,0 +1,14 @@
+C:\Users\HP\source\repos\rabota4\rabota4\bin\Debug\netcoreapp3.1\rabota4.exe
+C:\Users\HP\source\repos\rabota4\rabota4\bin\Debug\netcoreapp3.1\rabota4.deps.json
+C:\Users\HP\source\repos\rabota4\rabota4\bin\Debug\netcoreapp3.1\rabota4.runtimeconfig.json
+C:\Users\HP\source\repos\rabota4\rabota4\bin\Debug\netcoreapp3.1\rabota4.runtimeconfig.dev.json
+C:\Users\HP\source\repos\rabota4\rabota4\bin\Debug\netcoreapp3.1\rabota4.dll
+C:\Users\HP\source\repos\rabota4\rabota4\bin\Debug\netcoreapp3.1\rabota4.pdb
+C:\Users\HP\source\repos\rabota4\rabota4\obj\Debug\netcoreapp3.1\rabota4.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\rabota4\rabota4\obj\Debug\netcoreapp3.1\rabota4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\rabota4\rabota4\obj\Debug\netcoreapp3.1\rabota4.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\rabota4\rabota4\obj\Debug\netcoreapp3.1\rabota4.AssemblyInfo.cs
+C:\Users\HP\source\repos\rabota4\rabota4\obj\Debug\netcoreapp3.1\rabota4.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\rabota4\rabota4\obj\Debug\netcoreapp3.1\rabota4.dll
+C:\Users\HP\source\repos\rabota4\rabota4\obj\Debug\netcoreapp3.1\rabota4.pdb
+C:\Users\HP\source\repos\rabota4\rabota4\obj\Debug\netcoreapp3.1\rabota4.genruntimeconfig.cache

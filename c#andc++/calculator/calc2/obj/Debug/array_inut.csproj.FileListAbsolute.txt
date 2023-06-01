@@ -1,0 +1,7 @@
+C:\Users\HP\source\repos\calculator\calc2\bin\Debug\calc2.exe.config
+C:\Users\HP\source\repos\calculator\calc2\bin\Debug\calc2.exe
+C:\Users\HP\source\repos\calculator\calc2\bin\Debug\calc2.pdb
+C:\Users\HP\source\repos\calculator\calc2\obj\Debug\array_inut.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\calculator\calc2\obj\Debug\array_inut.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\calculator\calc2\obj\Debug\calc2.exe
+C:\Users\HP\source\repos\calculator\calc2\obj\Debug\calc2.pdb

@@ -1,0 +1,14 @@
+C:\Users\HP\source\repos\Laba2_22\Laba2_22\bin\Debug\netcoreapp3.1\Laba2_22.exe
+C:\Users\HP\source\repos\Laba2_22\Laba2_22\bin\Debug\netcoreapp3.1\Laba2_22.deps.json
+C:\Users\HP\source\repos\Laba2_22\Laba2_22\bin\Debug\netcoreapp3.1\Laba2_22.runtimeconfig.json
+C:\Users\HP\source\repos\Laba2_22\Laba2_22\bin\Debug\netcoreapp3.1\Laba2_22.runtimeconfig.dev.json
+C:\Users\HP\source\repos\Laba2_22\Laba2_22\bin\Debug\netcoreapp3.1\Laba2_22.dll
+C:\Users\HP\source\repos\Laba2_22\Laba2_22\bin\Debug\netcoreapp3.1\Laba2_22.pdb
+C:\Users\HP\source\repos\Laba2_22\Laba2_22\obj\Debug\netcoreapp3.1\Laba2_22.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\Laba2_22\Laba2_22\obj\Debug\netcoreapp3.1\Laba2_22.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\Laba2_22\Laba2_22\obj\Debug\netcoreapp3.1\Laba2_22.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\Laba2_22\Laba2_22\obj\Debug\netcoreapp3.1\Laba2_22.AssemblyInfo.cs
+C:\Users\HP\source\repos\Laba2_22\Laba2_22\obj\Debug\netcoreapp3.1\Laba2_22.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\Laba2_22\Laba2_22\obj\Debug\netcoreapp3.1\Laba2_22.dll
+C:\Users\HP\source\repos\Laba2_22\Laba2_22\obj\Debug\netcoreapp3.1\Laba2_22.pdb
+C:\Users\HP\source\repos\Laba2_22\Laba2_22\obj\Debug\netcoreapp3.1\Laba2_22.genruntimeconfig.cache

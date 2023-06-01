@@ -1,0 +1,10 @@
+﻿  Source.cpp
+C:\Users\HP\Downloads\Source.cpp(18,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(24,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(26,24): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(34,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(36,24): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(46,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(48,24): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(71,23): warning C4018: <: несоответствие типов со знаком и без знака
+  demonstr.vcxproj -> C:\Users\HP\source\repos\demonstr\Debug\demonstr.exe

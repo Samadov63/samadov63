@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\HP\Downloads\Source.cpp(52,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(61,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(83,23): warning C4018: <: несоответствие типов со знаком и без знака
+  hhh.vcxproj -> C:\Users\HP\source\repos\hhh\Debug\hhh.exe

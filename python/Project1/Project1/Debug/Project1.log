@@ -1,0 +1,5 @@
+﻿  222.cpp
+C:\Users\HP\Downloads\222.cpp(17,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\222.cpp(24,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\222.cpp(32,35): warning C4018: <: несоответствие типов со знаком и без знака
+  Project1.vcxproj -> C:\Users\HP\Desktop\Project1\Debug\Project1.exe

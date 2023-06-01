@@ -1,0 +1,6 @@
+﻿  Source.cpp
+C:\Users\HP\source\repos\Laba_5_2\Laba_5_2\Source.cpp(65,13): warning C4018: >=: несоответствие типов со знаком и без знака
+C:\Users\HP\source\repos\Laba_5_2\Laba_5_2\Source.cpp(133,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\source\repos\Laba_5_2\Laba_5_2\Source.cpp(140,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\source\repos\Laba_5_2\Laba_5_2\Source.cpp(151,20): warning C4018: <: несоответствие типов со знаком и без знака
+  Laba_5_2.vcxproj -> C:\Users\HP\source\repos\Laba_5_2\Debug\Laba_5_2.exe

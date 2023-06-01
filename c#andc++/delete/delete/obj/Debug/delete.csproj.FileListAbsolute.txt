@@ -1,0 +1,7 @@
+C:\Users\HP\source\repos\delete\delete\bin\Debug\delete.exe.config
+C:\Users\HP\source\repos\delete\delete\bin\Debug\delete.exe
+C:\Users\HP\source\repos\delete\delete\bin\Debug\delete.pdb
+C:\Users\HP\source\repos\delete\delete\obj\Debug\delete.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\delete\delete\obj\Debug\delete.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\delete\delete\obj\Debug\delete.exe
+C:\Users\HP\source\repos\delete\delete\obj\Debug\delete.pdb

@@ -1,0 +1,9 @@
+﻿  Source.cpp
+C:\Users\HP\Downloads\Source.cpp(19,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(26,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(37,20): warning C4018: <: несоответствие типов со знаком и без знака
+Source.obj : error LNK2019: ссылка на неразрешенный внешний символ "class std::basic_istream<char,struct std::char_traits<char> > & __cdecl operator>>(class std::basic_istream<char,struct std::char_traits<char> > &,class TMan &)" (??5@YAAAV?$basic_istream@DU?$char_traits@D@std@@@std@@AAV01@AAVTMan@@@Z) в функции _main.
+Source.obj : error LNK2019: ссылка на неразрешенный внешний символ "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class TMan const &)" (??6@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AAV01@ABVTMan@@@Z) в функции _main.
+Source.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: bool __thiscall TMan::Voter(void)" (?Voter@TMan@@QAE_NXZ) в функции _main.
+Source.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: bool __thiscall TMan::operator==(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??8TMan@@QAE_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) в функции _main.
+C:\Users\HP\source\repos\Laba_3_2\Debug\Laba_3_2.exe : fatal error LNK1120: неразрешенных внешних элементов: 4

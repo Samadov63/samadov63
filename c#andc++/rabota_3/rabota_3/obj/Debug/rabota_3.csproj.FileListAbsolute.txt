@@ -1,0 +1,7 @@
+C:\Users\HP\source\repos\rabota_3\rabota_3\obj\Debug\rabota_3.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\rabota_3\rabota_3\obj\Debug\rabota_3.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\rabota_3\rabota_3\bin\Debug\rabota_3.exe.config
+C:\Users\HP\source\repos\rabota_3\rabota_3\bin\Debug\rabota_3.exe
+C:\Users\HP\source\repos\rabota_3\rabota_3\bin\Debug\rabota_3.pdb
+C:\Users\HP\source\repos\rabota_3\rabota_3\obj\Debug\rabota_3.exe
+C:\Users\HP\source\repos\rabota_3\rabota_3\obj\Debug\rabota_3.pdb

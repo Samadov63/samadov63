@@ -1,0 +1,11 @@
+﻿  Source.cpp
+C:\Users\HP\source\repos\Project5\Project5\Source.cpp(5,14): error C3646: f: неизвестный спецификатор переопределения
+C:\Users\HP\source\repos\Project5\Project5\Source.cpp(5,15): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\HP\source\repos\Project5\Project5\Source.cpp(9,9): error C2065: f: необъявленный идентификатор
+C:\Users\HP\source\repos\Project5\Project5\Source.cpp(10,14): error C2065: f: необъявленный идентификатор
+C:\Users\HP\source\repos\Project5\Project5\Source.cpp(10,27): error C2065: cout: необъявленный идентификатор
+C:\Users\HP\source\repos\Project5\Project5\Source.cpp(15,14): error C2065: f: необъявленный идентификатор
+C:\Users\HP\source\repos\Project5\Project5\Source.cpp(16,9): error C2065: f: необъявленный идентификатор
+C:\Users\HP\source\repos\Project5\Project5\Source.cpp(17,13): error C2065: f: необъявленный идентификатор
+C:\Users\HP\source\repos\Project5\Project5\Source.cpp(19,9): error C2065: f: необъявленный идентификатор
+C:\Users\HP\source\repos\Project5\Project5\Source.cpp(24,9): error C2065: f: необъявленный идентификатор

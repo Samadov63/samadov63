@@ -1,0 +1,3 @@
+﻿  Source.cpp
+C:\Users\HP\Desktop\ibragim\ibragim\Source.cpp(5,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  ibragim.vcxproj -> C:\Users\HP\Desktop\ibragim\Debug\ibragim.exe

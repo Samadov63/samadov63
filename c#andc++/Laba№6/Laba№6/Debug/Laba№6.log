@@ -1,0 +1,10 @@
+﻿  Source.cpp
+C:\Users\HP\Downloads\Source.cpp(17,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(23,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(25,24): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(33,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(35,24): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(45,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(47,24): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(68,23): warning C4018: <: несоответствие типов со знаком и без знака
+  Laba№6.vcxproj -> C:\Users\HP\source\repos\Laba№6\Debug\Laba№6.exe

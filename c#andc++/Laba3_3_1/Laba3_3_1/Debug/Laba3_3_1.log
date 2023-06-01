@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\HP\Downloads\Source.cpp(72,26): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\HP\Downloads\Source.cpp(83,26): warning C4018: <: несоответствие типов со знаком и без знака
+  Laba3_3_1.vcxproj -> C:\Users\HP\source\repos\Laba3_3_1\Debug\Laba3_3_1.exe

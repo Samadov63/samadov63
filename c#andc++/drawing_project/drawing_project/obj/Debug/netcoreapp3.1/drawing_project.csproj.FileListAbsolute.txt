@@ -1,0 +1,16 @@
+C:\Users\HP\source\repos\drawing_project\drawing_project\bin\Debug\netcoreapp3.1\drawing_project.exe
+C:\Users\HP\source\repos\drawing_project\drawing_project\bin\Debug\netcoreapp3.1\drawing_project.deps.json
+C:\Users\HP\source\repos\drawing_project\drawing_project\bin\Debug\netcoreapp3.1\drawing_project.runtimeconfig.json
+C:\Users\HP\source\repos\drawing_project\drawing_project\bin\Debug\netcoreapp3.1\drawing_project.runtimeconfig.dev.json
+C:\Users\HP\source\repos\drawing_project\drawing_project\bin\Debug\netcoreapp3.1\drawing_project.dll
+C:\Users\HP\source\repos\drawing_project\drawing_project\bin\Debug\netcoreapp3.1\drawing_project.pdb
+C:\Users\HP\source\repos\drawing_project\drawing_project\obj\Debug\netcoreapp3.1\drawing_project.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\drawing_project\drawing_project\obj\Debug\netcoreapp3.1\drawing_project.Form1.resources
+C:\Users\HP\source\repos\drawing_project\drawing_project\obj\Debug\netcoreapp3.1\drawing_project.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\drawing_project\drawing_project\obj\Debug\netcoreapp3.1\drawing_project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\drawing_project\drawing_project\obj\Debug\netcoreapp3.1\drawing_project.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\drawing_project\drawing_project\obj\Debug\netcoreapp3.1\drawing_project.AssemblyInfo.cs
+C:\Users\HP\source\repos\drawing_project\drawing_project\obj\Debug\netcoreapp3.1\drawing_project.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\drawing_project\drawing_project\obj\Debug\netcoreapp3.1\drawing_project.dll
+C:\Users\HP\source\repos\drawing_project\drawing_project\obj\Debug\netcoreapp3.1\drawing_project.pdb
+C:\Users\HP\source\repos\drawing_project\drawing_project\obj\Debug\netcoreapp3.1\drawing_project.genruntimeconfig.cache
