@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title> var 12</title>
+
+    <style>
+        table {
+
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 20px;
+            margin: auto;
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+
+        .light{
+            background: #fff;
+        }
+
+        .dark{
+            background: #c6d9f1;
+        }
+
+
+    </style>
+</head>
+
+<body>
+ <form>
+       <label for="n">Введите порядок первой матрицы:</label>
+   <input type="text" id="n">
+  
+
+   <input type="button" id="btn" value="Построить первую матрицу" onclick="viewTable1()">
+ <br>
+ <br>
+   <label for="p">Введите порядок второй матрицы:</label>
+   <input type="text" id="p">
+
+   <input type="button" id="btn" value="Построить первую матрицу" onclick="viewTable2()">
+  
+  </form>
+
+<p id="info"></p>
+    <div id="elem"></div>
+    <h1 id="time">Max на диагоналях: <div id="max1"></div> </h1>  
+    <h1 id="time">Min на диагоналях: <div id="min1"></div> </h1> 
+
+    <br>
+
+    <div id="elem1"></div>
+    <h1 id="time">Max на диагоналях: <div id="max"></div> </h1>  
+    <h1 id="time">Min на диагоналях: <div id="min"></div> </h1> 
+    <script>
+        var elem = document.querySelector('#elem');
+        var elem = document.querySelector('#elem1');
+        var N=document.querySelector('#n');
+        var P=document.querySelector('#p');
+        var btn=document.querySelector('#btn');
+       
+
+        let SumMaxGlavDiag1=0;
+        let SumMaxPobochDiag1=0;
+        let SumMaxGlavDiag2=0;
+        let SumMaxPobochDiag2=0;
+
+
+        function viewTable1(){
+            console.log("in viewTable1");
+            N=parseInt(N.value);
+            createTable1(elem, N);
+         
+        }
+
+        function viewTable2(){
+            console.log("in viewTable2");
+            P=parseInt(P.value);
+            createTable2(elem1, P);
+        }
+
+
+        function createTable1(parent, N) {
+
+var table = document.createElement('table');
+var center = (N / 2).toFixed(0) - 1;
+var a = 0,
+    b = N - 1;
+var max1 = Arr[0][0];
+var min1 = Arr[0][0];
+
+for (var i = 0; i < N; i++) {
+    var tr = document.createElement('tr');
+
+    for (var j = 0; j < N; j++) {
+        var td = document.createElement('td');
+
+        tr.appendChild(td);
+        td.insertAdjacentHTML("beforeEnd", Arr[i][j]);
+
+                if(i==j || i+j == N -1){
+                    if(Arr[i][j]>max1){
+                        max1 = Arr[i][j];      
+                    } 
+                }            
+  
+                if(i==j || i+j == N -1){
+                    if(Arr[i][j]<min1){
+                        min1 = Arr[i][j];      
+                    } 
+                }    
+                
+                    
+    } 
+
+    table.appendChild(tr);
+}
+
+  
+parent.appendChild(table);
+document.getElementById("max1").innerHTML = max1;
+document.getElementById("min1").innerHTML = min1;
+
+
+
+}
+var elem = document.querySelector('#elem');
+var Arr = [N];
+
+for (let i = 0; i < 25; i++) {
+Arr[i] = [];
+for (let j = 0; j < 25; j++) {
+    Arr[i][j] = (Math.random() * 99).toFixed(0);
+
+}
+}
+
+
+createTable1(elem, N);
+    
+
+        
+
+
+
+
+function createTable2(parent, P) {
+
+var table = document.createElement('table');
+var center = (P / 2).toFixed(0) - 1;
+var a = 0,
+    b = P - 1;
+var max = Arry[0][0];
+var min = Arry[0][0];
+for (var i = 0; i < P; i++) {
+    var tr = document.createElement('tr');
+
+    for (var j = 0; j < P; j++) {
+        var td = document.createElement('td');
+
+        tr.appendChild(td);
+        td.insertAdjacentHTML("beforeEnd", Arry[i][j]);
+
+        if(i==j || i+j == P -1){
+                    if(Arry[i][j]>max){
+                        max = Arry[i][j];      
+                    } 
+                }            
+  
+                if(i==j || i+j == P -1){
+                    if(Arry[i][j]<min){
+                        min = Arry[i][j];      
+                    } 
+                }   
+
+
+    } 
+
+    table.appendChild(tr);
+}
+parent.appendChild(table);
+document.getElementById("max").innerHTML = max;
+document.getElementById("min").innerHTML = min;
+
+}
+var elem1 = document.querySelector('#elem1');
+var Arry = [P];
+
+for (let i = 0; i < 25; i++) {
+Arry[i] = [];
+for (let j = 0; j < 25; j++) {
+    Arry[i][j] = (Math.random() * 99).toFixed(0);
+
+}
+}
+
+
+createTable2(elem1, P);
+
+
+    </script>
+</body>
+
+</html>
+

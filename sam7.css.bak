@@ -1,0 +1,11 @@
+.karkas {width: 1175; height: 99px; margin: auto; background-image: url("Img/top.png");}
+.text1 {margin: auto; width: 100%; height: 50px; color: black; font-family: "Arial"; font-size: 45px; text-align: center}
+.buttons {margin: auto; width: 1108px; height: 57px; background-image: url("Img/bot.png")}
+.menu {margin: auto; width: 1108px; font-size: 18px; font-family: "Arial"}
+.img {float: right; margin-left: 0; margin-top:0}
+.menu2 {margin: auto; width: 100%; height: 200px; background-image: url("Img/шоколад.jpg")}
+.text3 { padding-left: 20%; width: 25%; height: 100%; color: white; font-family: "Arial"; font-size: 42px; float: left;}
+.text4 {  width: 30%; height: 100%; float: right; padding-right: 20%}
+.table {padding-right: 20%; width: 100%; height: 100%; color: #ff8c00; font-size: 18px}
+.footer {width: 100%; height: 70px; margin: bot; color: #ff8c00; background-color: #340c17; font-size: 12px; text-align: center;} 
+.img2 {width: 1173px; height:260px; margin: auto; background-image: url ("Img/фон.png")}

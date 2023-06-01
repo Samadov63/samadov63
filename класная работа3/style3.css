@@ -1,0 +1,29 @@
+body{
+	
+}
+
+
+.p11{
+color: darkred;
+background-color: skyblue;
+font-size: 20px;
+text-decoration: blink;
+position: absolute; top: 100px; left: 140px;
+z-index: 3;
+height: 300px; width: 340px;
+padding: 1.5cm;
+border: solid;color: grey;
+text-align: justify;
+}
+
+.p22{
+color: darkred;
+background-color: skyblue;
+font-size: 20px;
+position: absolute; top: 100px; left: 640px;
+height: 300px; width: 340px;
+z-index:2;
+padding: 1.5cm;
+text-align: justify;
+border: solid; color: grey;
+}

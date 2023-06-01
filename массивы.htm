@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			table {
+				border-collapse: collapse;
+				background-color: blue;
+			}
+			table td {
+				border: 1px solid rgb(175, 21, 21);
+				width: 50px;
+				height: 50px;
+				text-align: center;
+				color: rgb(179, 255, 0);
+			}
+			div {
+				width: 100%;
+			}
+		</style>
+		<title>massives</title>
+	</head>
+	<body>
+		<button onclick="generateTable()">Сгенирировать массив</button>
+		<div id="table-container"></div>
+		
+		<script>
+			var arr = [];
+			// над диоганалью
+
+			function generateTable() {// генерирование таблицы
+				let x = 0, y = 0; 
+				var tableHtml = '<table style="Display: table-cell; float:left;">';
+				for (let i = 0; i <= 6; i++) { // массив от 1 до 5
+					tableHtml += '<tr >';
+					arr[i] = [];
+					for (let j = 0; j <= 6; j++) { // массив с тремя столбцами
+						arr[i][j] = Math.round(Math.random() * 99); // генерация чисел в ячейках от 1 до 99
+						tableHtml += '<td>' + arr[i][j] + '</td>'; // создание ячеек
+					}
+					tableHtml += '</tr>';
+				}
+				tableHtml += '</table>';
+				
+				document.getElementById('table-container').innerHTML = tableHtml; //закрытие таблицы
+				for (let i = 0; i<=6; i++){
+					for(let j = 1+i; j<=6;j++){
+					x = x*1+(arr[i][j])*1;
+					
+					}
+				}
+				var element = document.getElementById('form');
+				element.innerHTML = "Сумма над главной диагональю " +x;
+				
+				for (let i = 0; i<=6; i++){
+					for(let j = 0; j<i;j++){
+					y = y*1+(arr[i][j])*1;
+					
+					}
+				}
+				var element = document.getElementById('form1');
+				element.innerHTML = "Сумма под главной диагональю " +y;
+				var elem = document.getElementById('form2');
+				if (x<y){
+				
+				elem.innerHTML = "Сумма под главной диагональю больше";
+				}
+				else{
+				
+				elem.innerHTML = "Сумма над главной диаганалью больше";
+				}
+			}
+		
+		</script>
+		<div id = "form"></div>
+		<div id = "form1"></div>
+		<div id = "form2"></div>
+	</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>2 задание</title>
+     <style>
+       
+       body {
+        height: 1200px;
+        background: linear-gradient( 217deg, rgb(40, 26, 228), rgb(255 100 100 / 0) 70.71% ), linear-gradient( 127deg, rgb(6, 26, 209), rgb(100 255 100 / 0) 70.71% ), linear-gradient( 336deg, rgb(6, 26, 136), rgb(100 100 255 / 0) 70.71% );
+          font-size: 25px;
+    text-shadow: 1px 1px 1px white;
+       }
+        table {
+
+            border-collapse: collapse;
+        }
+
+        table td {
+          
+            padding: 20px;
+            margin: auto;
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+         .sum{
+             color: red;
+         }
+       
+       #btn{
+         margin:20px;
+       font-size: 17px;
+    background:  rgb(20, 17, 201);
+   margin-left: 45%; 
+   color: white;
+  }
+       
+       
+       label{
+       
+    color: rgb(110, 20, 228);
+    margin: 20px;
+  }
+
+  .centr{
+    text-align: center;
+  }
+    </style>
+</head>
+<body>
+    <form name="f1">
+        <label for="rows">Введите порядок массива:</label>
+       <input type="text" id="rows">
+       <br>
+       
+    
+    
+       <input type="button" id="btn" value="Построить таблицу" onclick="viewTable()">
+    </form>
+     <div id="elem"></div>
+    <script>
+             var elem = document.querySelector('#elem');
+            var rows=document.querySelector('#rows');
+            var btn=document.querySelector('#btn');
+    
+    
+            function viewTable(){
+    
+                rows=parseInt(rows.value);
+                createTable(elem, rows);
+            }
+    
+                function createTable(parent, rows) {
+                    /*создаю массив*/
+                    var Arr=new Array(rows)
+                    for(let i=0;i<rows;i++){
+                        Arr[i]=new Array(rows);
+                    }
+    
+                    /*заполняю массив рандомными числами*/
+                     for(let i=0;i<rows;i++){
+                        for(let j=0;j<rows;j++){
+                            Arr[i][j]=Math.round(Math.random()*100);
+                        }
+                    }
+                    /*создаю и вывожу таблицу с массивом и суммой по каждой строке*/
+    
+                    var sumi;
+                var table = document.createElement('table');
+    
+                for (var i = 0; i < rows; i++) {
+                    sumi=0;
+                    var tr = document.createElement('tr');
+                    for (var j = 0; j < rows; j++) {
+                        var td = document.createElement('td');
+                        tr.appendChild(td);
+                        td.insertAdjacentHTML("afterBegin",Arr[i][j]);
+                        sumi+=Arr[i][j];
+                    }
+                    tr.insertAdjacentHTML("beforeEnd","<td class=\"sum\">"+sumi+"</td>")
+                    table.appendChild(tr);
+    
+                }
+                parent.appendChild(table);
+            }</script>
+    </body>
+</html>

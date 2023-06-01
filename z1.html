@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>1 задание</title>
+  <style> 
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  background: #fff;
+}
+
+button {
+  margin-left: 30px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+button.btn {
+  font-weight: 600;
+  color: #382b22;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: #1fc419;
+  border: 2px solid #421ad4;
+  border-radius: 0.75em;
+  transition: transform 0.15s;
+  transform-style: preserve-3d;
+}
+button.btn::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3318ce;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #36b410, 0 0.625em 0 0 #d60d06;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+button.btn:hover {
+  background: #ffe9e9;
+  transform: translate(0, 0.25em);
+}
+button.btn:hover::before {
+  box-shadow: 0 0 0 2px #35e41e, 0 0.5em 0 0 #cf1913;
+  transform: translate3d(0, 0.5em, -1em);
+}
+button.btn:active {
+  background: #ffe9e9;
+  transform: translate(0em, 0.75em);
+}
+button.btn:active::before {
+  box-shadow: 0 0 0 2px #e22a77, 0 0 #641de9;
+  transform: translate3d(0, 0, -1em);
+}
+	
+  
+  </style>
+
+</head>
+<body>
+
+  
+
+  <button class="btn" name="op"onclick="openNewWindow()">Открыть окошко</button>
+  
+  <button class="btn" name="op"onclick="closeNewWindow()">Закрыть окошко</button>
+
+
+    <script>
+        var win;
+        var btnOpen=document.querySelector('#op');
+        var btnClose=document.querySelector('#cl');
+    
+
+        function openNewWindow(){
+            win=window.open("","_blank","top=100, left=150, width=300, height=50, scrollbars=no,status=no, titlebar=no, location=no, resizable=yes,menubar=no");
+
+            win.document.write("Helooo");
+      
+            btnOpen.disabled=true;
+            btnClose.disabled=false;
+        }
+
+        function closeNewWindow(){
+            win.close();
+            btnOpen.disabled=false;
+            btnClose.disabled=true;
+        }
+
+
+    </script>
+</body>
+</html>

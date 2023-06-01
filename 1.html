@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Dz 5 varik</title>
+    <style>
+        body{
+            background-color: rgb(241, 192, 192);
+        }
+
+        .Zadanie{
+            font-size: 34px;
+            font-weight: bold;
+            color:rgb(25, 49, 49);
+            text-shadow: 1px 1px 1px black;
+        }
+
+        .fotka{
+            position: absolute;
+            top: 30px; 
+            left: 45%;
+            
+        }
+    </style>
+   <script>
+       function testinput(inp) {
+           inp.value = inp.value.replace(/[^\d]/, "");
+           if(Math.abs(inp.value) > 10) {
+               alert("Число должно быть в диапазоне -10...10");
+               inp.value = inp.value.substr(0,inp.value.length - 1);
+           }
+    }
+
+    const changeHandler = e => {
+        const value = e.value
+        e.value = value.replace(/\D/g, '')
+    } 
+
+    const changeHandler1 = e => {
+        const value = e.value
+        e.value = value.replace(/[8-9A-ZА-Яa-zа-я,.-]/g, '')
+    }
+
+    const changeHandler2 = e => {
+        const value = e.value
+        e.value = value.replace(/[G-ZА-Яa-zа-я,.-]/g, '')
+    }
+   </script>
+</head>
+<body>
+<h1 class="Zadanie">Десятичная строчка</h1>
+<input type="text" name="index" oninput="changeHandler(this);" /> 
+<p class="cawl">(Вводится все числа от 0-9)</p>
+<br>
+<br>
+<h1 class="Zadanie">Восьмеричная строчка</h1>
+<input type="text" name="index" oninput="changeHandler1(this);" /> 
+<p class="cawl">(Вводится все числа от 0-7)</p>
+
+<br>
+<br>
+<h1 class="Zadanie">Шестнадцатеричная строчка</h1>
+<input type="text" name="index" oninput="changeHandler2(this);" /> 
+<p class="cawl">(Вводится все числа от 0-9 и от A-F)</p>
+<img class="fotka" src="2.jpg">
+</body>
+</html>

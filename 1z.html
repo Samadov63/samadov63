@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>1 задание</title>
+
+<style>
+  
+  body{
+    height: 1000px;
+     font-size: 25px;
+    text-shadow: 1px 1px 1px white;
+    background: linear-gradient( 217deg, rgb(39, 91, 187), rgb(255 100 100 / 0) 70.71% ), linear-gradient( 127deg, rgb(48, 34, 243), rgb(100 255 100 / 0) 70.71% ), linear-gradient( 336deg, rgb(30, 209, 6), rgb(100 100 255 / 0) 70.71% );
+  }
+  
+    #elems{
+      width: 50%
+  }
+  label{
+    color: rgb(77, 28, 192);
+   
+    margin: 20px;
+    
+    
+  }
+  
+  
+  #btn{
+       font-size: 17px;
+    background: linear-gradient(rgb(26, 49, 182)	, rgb(160, 190, 23));
+   color: white;
+   margin: 0 auto;
+   display: block;
+  }
+  .centr{
+    text-align: center;
+  }
+  
+  #elems{
+    
+    text-align: center;
+    font-size: large;
+    margin: 0 auto;
+   display: block;
+  }
+  #btn1{
+       font-size: 17px;
+    background: linear-gradient(rgb(21, 17, 221)	, rgb(216, 219, 31));
+   margin-left:auto; 
+   color: white;
+   margin: 0 auto;
+   display: block;
+  }
+
+  
+
+  .textmaxmin{
+    float: left;
+  }
+  .kras{
+    font-size: large;
+    text-shadow: #102cce 1px 1px 0px, #000 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px;
+    color: white;
+    margin-top: 25px;
+    background: linear-gradient( 217deg, rgb(15, 18, 228), rgb(255 100 100 / 0) 70.71% ), linear-gradient( 127deg, rgb(214, 11, 255), rgb(100 255 100 / 0) 70.71% ), linear-gradient( 336deg, rgb(143, 36, 129), rgb(100 100 255 / 0) 70.71% );
+  }
+
+    </style>
+</head>
+
+<body>
+ 
+<form name="f1">
+   <legend class="centr">Одномерный массив: </legend>
+   <br>
+   <input type="button" name="btn" id="btn" value="Создать массив" onclick="getArr(f1)">
+    <br>
+  <br>
+   
+    <input class="kras" type="text" name="elems" id="elems" readonly>
+    <br>
+  <br>
+    <input type="button" name="btn" id="btn1" value="Найти максимальный и минимальный элементы массива" onclick="getMax(f1); getMin(f1)">
+    <br>
+  <br>
+  <div>
+  <label class="textmaxmin" for="max">Max элемент: </label>
+  <input class="kras" type="text" name="max" id="max" readonly> 
+</div>
+   
+    <br>
+  <br>
+  <div>
+  <label class="textmaxmin" for="min">Min элемент: </label>
+  <input class="kras" type="text" name="min" id="min" readonly>
+</div>
+ 
+</form>
+    <script>
+        var Arr;
+        var N;
+
+        function getArr(obj){
+            N=Math.round(Math.random()*20);;
+            Arr=new Array(N)
+
+            for(var i=0; i<N; i++){
+            Arr[i]=Math.round(Math.random()*999);
+            }
+            obj.elems.value=Arr.join(" ");
+
+            obj.max.value="";
+            obj.min.value="";
+
+        }
+
+        function getMax(obj){
+            let max=Arr[0];
+            for(var i=0; i<N; i++){
+                if(Arr[i]>max){
+                    max=Arr[i];
+                }
+            }
+            obj.max.value=max;
+        }
+
+
+        function getMin(obj){
+            let min=Arr[0];
+            for(var i=0; i<N; i++){
+                if(Arr[i]<min){
+                    min=Arr[i];
+                }
+            }
+            obj.min.value=min;
+        }
+
+    </script>
+</body>
+</html>

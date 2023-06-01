@@ -1,0 +1,24 @@
+<head>
+
+</head>
+<body>
+<script>
+var mytable=document.createElement("table");
+document.body.appendChild(mytable);
+var a=2;
+for(var i=0;i<10;i++){
+    var b=a;
+    if(a==4)a=0;
+    var mytr=document.createElement("tr");
+    mytable.appendChild(mytr);
+    for(var j=0;j<10;j++){
+        var mytd=document.createElement("td");
+        if(j>8-i){b=0;mytd.bgColor="blue"}else{mytd.bgColor="red"};
+        mytd.width=mytd.height=30;
+        mytr.appendChild(mytd);
+        b++;
+    }
+    a++;
+}
+</script>
+</body>

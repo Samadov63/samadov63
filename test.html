@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<link rel="stylesheet" href="test.css"
+<title>Объект в качестве параметра функции</title>
+<script>
+// Сумма за квартал, налог и сумма, выдаваемая на руки
+function sum(obj)
+{var a1=Number(obj.n1.value)
+var a2=Number(obj.n2.value)
+var a3=Number(obj.n3.value)
+var a4=Number(obj.n4.value)
+var a5=Number(obj.n5.value)
+var s= a1+a2+a3+a4+a5
+
+obj.res1.value=s
+
+
+}
+function avg(obj)
+{var a1=Number(obj.n1.value)
+var a2=Number(obj.n2.value)
+var a3=Number(obj.n3.value)
+var a4=Number(obj.n4.value)
+var a5=Number(obj.n5.value)
+var n= (a1+a2+a3+a4+a5)/5
+obj.res2.value=n
+
+}
+</script>
+</head>
+
+<body>
+<header>
+<h4>Определение дохода за квартал</h4>
+</header>
+<section id="form">
+<form name="form1" id="form1">
+<p> Введите суммы за каждый месяц и нажмите на кнопку
+<b>Вычислить</b></р><br>
+<pre>
+Работник1: <input type="text" name="n1" size=10><br>
+Работник2: <input type="text" name="n2" size=10><br>
+Работник3: <input type="text" name="n3" size=10><br>
+Работник4: <input type="text" name="n4" size=10><br>
+Работник5: <input type="text" name="n5" size=10><br>
+<input type="button" value=Вычиcлить onclick="sum(form1)">
+Сумма за квартал: <input type="text" name="res1" size=10>
+<input type="button" value=Среднее onclick="avg(form1)">
+Среднее зарплаты: <input type="text" name="res2" size=10><br>
+</pre>
+<input type="reset">
+</form>
+<img src="https://www.budgetnik.ru/images/ART-600x408/10.jpg" width="200px" height="200px">
+</section>
+</body>
+</html>
+<!--  -->

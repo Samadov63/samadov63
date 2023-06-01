@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>4 задание</title>
+
+    <style>
+
+      body{
+      height: 1200px;
+      background: linear-gradient( 217deg, rgb(108, 133, 51), rgb(255 100 100 / 0) 70.71% ), linear-gradient( 127deg, rgb(244 152 173 / 1), rgb(100 255 100 / 0) 70.71% ), linear-gradient( 336deg, rgb(255 216 41 / 1), rgb(100 100 255 / 0) 70.71% );
+      }
+        table {
+          text-align: center;
+          text-shadow: #1814f7 1px 1px 0px, #000 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px;
+          color:rgb(0, 0, 0);
+          margin: auto;
+            border-collapse: collapse;
+        }
+
+        table td {
+          width: 70px;
+          height: 70px;
+            padding: 25px;
+            border: 2px solid rgb(4, 41, 10);
+        }
+
+        tr:nth-child(odd) td:nth-child(odd) {
+            background: rgb(98, 194, 233);
+        }
+
+        tr:nth-child(even) td:nth-child(even) {
+            background:   rgb(42, 154, 206);
+        }
+        .red{
+        font-size: 20px;
+        color:rgb(0, 0, 0);
+        text-shadow: #2320e7 1px 1px 0px, #000 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px;
+        margin-top: 100px;
+        margin-left: 40%;
+        }
+        input[type="button"]{
+          height: 50px;
+          width: 150px;
+          background: linear-gradient( 217deg, rgb(46 154 255 / 1), rgb(255 100 100 / 0) 70.71% ), linear-gradient( 127deg, rgb(79, 213, 223), rgb(100 255 100 / 0) 70.71% ), linear-gradient( 336deg, rgb(255 216 41 / 1), rgb(100 100 255 / 0) 70.71% );
+          margin-left: 47%;
+          font-size: 15px;
+          color:rgb(0, 0, 0);
+        text-shadow: #2d1692 1px 1px 0px, #000 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px;
+        }
+
+      input{
+        background: linear-gradient( 217deg, rgb(62, 137, 207), rgb(255 100 100 / 0) 70.71% ), linear-gradient( 127deg, rgb(43, 106, 201), rgb(100 255 100 / 0) 70.71% ), linear-gradient( 336deg, rgb(255 216 41 / 1), rgb(100 100 255 / 0) 70.71% );
+      }
+    </style>
+</head>
+
+<body>
+ <form>
+  <br>
+  <br>
+       <label class="red" for="colls">Введите количество столбцов таблицы:</label>
+   <input type="text" id="colls">
+   <br>
+   <br>
+   <label  class="red" for="rows">Введите количество строк таблицы:</label>
+   <input type="text" id="rows">
+   <br>
+   <br>
+   <input type="button" id="btn" value="Построить таблицу" onclick="viewTable()">
+
+   <br>
+   <br>
+ </form>
+
+    <div id="elem"></div>
+    <script>
+        var elem = document.querySelector('#elem');
+        var colls=document.querySelector('#colls');
+        var rows=document.querySelector('#rows');
+        var btn=document.querySelector('#btn');
+
+
+
+
+        function viewTable(){
+            console.log("in viewTable");
+            colls=parseInt(colls.value);
+            rows=parseInt(rows.value);
+            createTable(elem, colls, rows);
+        }
+
+
+        function createTable(parent, cols, rows) {
+             console.log("in createTable");
+            var table = document.createElement('table');
+
+            for (var i = 0; i < rows; i++) {
+                var tr = document.createElement('tr');
+                for (var j = 0; j < cols; j++) {
+                    var td = document.createElement('td');
+                    tr.appendChild(td);
+                    td.innerHTML='['+i+"]["+j+']';
+                }
+                table.appendChild(tr);
+            }
+            parent.appendChild(table);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Вариант 5</title>
+<style>
+
+table {
+
+border-collapse: collapse;
+}
+
+table td,
+table th {
+
+padding: 20px;
+margin: auto;
+border: 1px solid black;
+text-align: center;
+background: white;
+}
+
+body{
+height: 2200px;
+font-size: 25px;
+text-shadow: 1px 1px 1px white;
+background: linear-gradient( 217deg, rgb(252, 116, 184), rgb(255 100 100 / 0) 70.71% ), linear-gradient( 127deg, rgb(214, 11, 255), rgb(100 255 100 / 0) 70.71% ), linear-gradient( 336deg, rgb(143, 36, 129), rgb(100 100 255 / 0) 70.71% );
+}
+
+#btn{
+
+font-size: 17px;
+background: linear-gradient(Pink	, purple);
+color: white;
+margin: 0 auto;
+display: block;
+}
+
+</style>
+
+  <script>
+var n = parseInt(prompt('Введите порядок первой матрицы', '5'));
+var m = parseInt(prompt('Введите порядок второй матрицы', '5'));
+var A = 1;
+var B = 99;
+var arrMin = null;
+var arrMax = null;
+var arrMin1 = null;
+var arrMax1 = null;
+var arr = new Array()
+var arryy = new Array()
+
+ 
+document.write('<h1><table align = center border = 1 ><tr><h1>')
+ 
+for (let i = 0; i < n; i++) {
+  arr[i] = new Array();
+ 
+  for (let j = 0; j < n; j++) {
+    arr[i][j] = parseInt(Math.random() * (B - A) + A);
+    document.write("<td width = 130>" + arr[i][j] + "</td>");
+  } 
+  document.write('</tr>');
+ 
+} document.write('</table >')
+ 
+arrMax = arr[0][0];
+arrMin = arr[0][0];
+for (var i = 0; i < n; i++) {
+  for (var j = 0; j < n; j++) {
+
+    if(i==j || i+j == n -1){
+    if (arr[i][j] > arrMax) {
+      arrMax = arr[i][j];
+    }
+    if (arr[i][j] < arrMin) {
+      arrMin = arr[i][j];
+    }
+  }
+  }
+}
+ 
+document.write('<p>Минимальный элемент массива на диагоналях: <b>' + arrMin + '</b>');
+document.write('<p>Максимальный элемент массива на диагоналях: <b>' + arrMax + '</b>');
+
+  document.write('<h1><table align = center border = 1 ><tr><h1>')
+ 
+ for (let i = 0; i < m; i++) {
+   arryy[i] = new Array();
+  
+   for (let j = 0; j < m; j++) {
+     arryy[i][j] = parseInt(Math.random() * (B - A) + A);
+     document.write("<td width = 130>" + arryy[i][j] + "</td>");
+   } 
+   document.write('</tr>');
+  
+ } document.write('</table >')
+  
+ arrMax1 = arryy[0][0];
+ arrMin1 = arryy[0][0];
+ for (var i = 0; i < m; i++) {
+   for (var j = 0; j < m; j++) {
+ 
+     if(i==j || i+j == m -1){
+     if (arryy[i][j] > arrMax1) {
+       arrMax1 = arryy[i][j];
+     }
+     if (arryy[i][j] < arrMin1) {
+       arrMin1 = arryy[i][j];
+     }
+   }
+   }
+ }
+  
+ document.write('<p>Минимальный элемент массива на диагоналях: <b>' + arrMin1 + '</b>');
+ document.write('<p>Максимальный элемент массива на диагоналях: <b>' + arrMax1 + '</b>');
+
+  </script>
+ </head> 
+ <body>
+  
+ </body>
+</html>

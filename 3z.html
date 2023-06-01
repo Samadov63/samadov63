@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3 задание</title>
+    <style>
+        table {
+
+            border-collapse: collapse;
+        }
+
+        table td,
+        table th {
+         
+            padding: 20px;
+            margin: auto;
+            border: 1px solid black;
+            text-align: center;
+            background: white;
+        }
+       
+  body{
+    height: 1200px;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px white;
+    background: linear-gradient( 217deg, rgb(98, 68, 209), rgb(255 100 100 / 0) 70.71% ), linear-gradient( 127deg, rgb(59, 75, 223), rgb(100 255 100 / 0) 70.71% ), linear-gradient( 336deg, rgb(25, 86, 219), rgb(100 100 255 / 0) 70.71% );
+  }
+
+  #btn{
+   
+   font-size: 17px;
+   background: linear-gradient(rgb(51, 54, 212)	, rgb(209, 113, 22));
+   color: white;
+   margin: 0 auto;
+   display: block;
+  }
+    </style>
+</head>
+
+<body>
+    <form name="f1">
+
+
+
+        <input type="button" id="btn" value="Построить календарь" onclick="viewCalendar()">
+        <br>
+
+    </form>
+    <div id="elem"></div>
+
+
+    <script>
+        var divElem = document.querySelector('#elem');
+
+        var now = new Date();
+        var month = getNameMonth(now.getMonth());
+        var year = now.getFullYear();
+
+        var WeekDayOfBeginMonth = new Date(year, now.getMonth(), 1).getDay();
+        if (WeekDayOfBeginMonth == 0) {
+            WeekDayOfBeginMonth = 7
+        }
+
+        var lastDayOfMonth = 32 - new Date(now.getFullYear(), now.getMonth(), 32).getDate();;
+
+
+
+        function viewCalendar() {
+            createCalendar();
+
+        }
+
+        function createCalendar() {
+            var table = document.createElement('table');
+            //формирую шапку
+            var thead = document.createElement('thead');
+            thead.insertAdjacentHTML("afterBegin", "<tr><th></th><th colspan=\"6\">" + month + "</th></tr>")
+            table.appendChild(thead);
+
+            //формирую тело
+            var tbody = document.createElement('tbody');
+            var begin = false;
+
+            for (let weekDay = 1; weekDay < 8; weekDay++) {
+                if (weekDay == WeekDayOfBeginMonth) {
+                    begin = true;
+                }
+                var tr = document.createElement('tr');
+                tr.insertAdjacentHTML("afterBegin", "<td>" + getNameWeekDay(weekDay) + "</td>")
+
+                for (let colls = 0; colls < 6; colls++) {
+                    var day = weekDay + colls * 7 - WeekDayOfBeginMonth + 1;
+                    if (day < 1 || day > lastDayOfMonth) {
+                        day = "";
+                    }
+                    var td = document.createElement('td');
+                    td.insertAdjacentHTML("afterBegin", day);
+                    tr.appendChild(td);
+
+
+                }
+                tbody.appendChild(tr);
+
+            }
+            table.appendChild(tbody);
+            divElem.appendChild(table);
+
+        }
+
+        function getNameMonth(num) {
+            let m;
+            switch (num) {
+                case 0:
+                    m = "Январь"
+                    break;
+                case 1:
+                    m = "Февраль"
+                    break;
+                case 2:
+                    m = "(03) Март"
+                    break;
+                case 3:
+                    m = "Апрель"
+                    break;
+                case 4:
+                    m = "Май"
+                    break;
+                case 5:
+                    m = "Июнь"
+                    break;
+                case 6:
+                    m = "Июль"
+                    break;
+                case 7:
+                    m = "Август"
+                    break;
+                case 8:
+                    m = "Сентябрь"
+                    break;
+                case 9:
+                    m = "Октябрь"
+                    break;
+                case 10:
+                    m = "Ноябрь"
+                    break;
+                case 11:
+                    m = "Декабрь"
+                    break;
+            }
+            return m;
+        }
+
+        function getNameWeekDay(num) {
+            let w;
+            switch (num) {
+                case 1:
+                    w = "Пн"
+                    break;
+                case 2:
+                    w = "Вт"
+                    break;
+                case 3:
+                    w = "Ср"
+                    break;
+                case 4:
+                    w = "Чт"
+                    break;
+                case 5:
+                    w = "Пт"
+                    break;
+                case 6:
+                    w = "Сб"
+                    break;
+                case 0:
+                    w = "Вс"
+                    break;
+                case 7:
+                    w = "Вс"
+                    break;
+            }
+            return w;
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title> var 5</title>
+
+    <style>
+
+body{
+      height: 1200px;
+      background: linear-gradient( 217deg, rgb(46 154 255 / 1), rgb(255 100 100 / 0) 70.71% ), linear-gradient( 127deg, rgb(244 152 173 / 1), rgb(100 255 100 / 0) 70.71% ), linear-gradient( 336deg, rgb(255 216 41 / 1), rgb(100 100 255 / 0) 70.71% );
+      }
+        table {
+          text-align: center;
+          text-shadow: #fa5cc0 1px 1px 0px, #000 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px;
+          color:rgb(0, 0, 0);
+          margin: auto;
+            
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 20px;
+            margin: auto;
+            border: 1px solid green;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+
+        .light{
+            background: rgb(138, 241, 155);
+        }
+
+        .dark{
+            background:  rgb(7, 61, 43);
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<p id="info"></p>
+    <div id="elem"></div>
+
+
+
+    <script>
+      function createTable(parent, N) {
+          
+          var left = 0,
+              right = 0;
+
+          var table = document.createElement('table');
+
+          var center = (N / 2).toFixed(0) - 1;
+          var a = 0,
+              b = N - 1;
+
+          for (var i = 0; i < N; i++) {
+              var tr = document.createElement('tr');
+
+              for (var j = 0; j < N; j++) {
+                  var td = document.createElement('td');
+
+                  tr.appendChild(td);
+                  
+                 
+
+                  if (i <= center) {
+
+                      if (j <= a) {
+                          td.className = "dark";
+                          left+=Arr[i][j]*1;
+                      } else if (j >= b) {
+                          td.className = "dark";
+                          right+=Arr[i][j]*1;
+                      } else {
+                          td.className = "light";
+                      }
+
+
+
+
+                  } else {
+
+                      if (j < a) {
+                          td.className = "dark";
+                          left+=Arr[i][j]*1;
+                      } else if (j > b) {
+                          td.className = "dark";
+                          right+=Arr[i][j]*1;
+                      } else {
+                          td.className = "light";
+
+                      }
+
+                  }
+
+                  //раскраска
+              }
+
+              if (i < center) {
+                  a++;
+                  b--;
+              } else if (i != center) {
+                  a--;
+                  b++;
+              }
+
+              table.appendChild(tr);
+          }
+          parent.appendChild(table);
+
+          var q=0;
+          for(let i=N;i>0;i-=2){
+             q+=i;
+          }
+
+
+      }
+
+
+      var elem = document.querySelector('#elem');
+
+      var Arr = [11];
+
+      for (let i = 0; i < 11; i++) {
+          Arr[i] = [];
+          for (let j = 0; j < 11; j++) {
+             
+          }
+      }
+
+
+      createTable(elem, 11);
+
+  </script>
+</body>
+
+</html>
+

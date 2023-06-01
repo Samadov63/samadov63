@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Создание сайта </TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<STYLE TYPE="text/css">
+	body {background-color:white; color: black;}
+	h2 {text-align: center;}
+	table {text-align: center;}
+	th {background-color: silver; width: 50%;}
+	td {background-color: lightgray; width: 50%; text-align: left;}
+	#bttn {background-color: silver; text-align: center;}
+</STYLE>
+</HEAD>
+<BODY>
+<h2>Анкета пользователя</h2>
+	<form>
+		<table align="center">
+			<tr>
+				<th>Личные данные</th>
+				<th>Увлечения</th>
+			</tr>
+			
+			<tr>
+				<td>
+					<label for="yourname">Ваше имя</label>
+					<br>
+					<input type="text" name="yourname">
+					<br>
+					<label for="youremail">Ваш e-mail</label>
+					<br>
+					<input type="text" name="youremail">
+					<br>
+					<label for="yourpassword">Ваш пароль</label>
+					<br>
+					<input type="text" name="yourpassword">
+				</td>
+				<td>
+				<input type="checkbox" name="internet" value="internet" id="internet">
+				<label for="internet">&ndash; Интернет общение</label>
+				<br>
+				<input type="checkbox" name="art" value="art" id="art">
+				<label for="art">&ndash; Литература и искусство</label>
+				<br>
+				<input type="checkbox" name="music" value="music" id="music">
+				<label for="music">&ndash; Музыка и кино</label>
+				<br>
+				<input type="checkbox" name="dance" value="dance" id="dance">
+				<label for="dance">&ndash; Танцы</label>
+				<br>
+				<input type="checkbox" name="sport" value="sport" id="sport">
+				<label for="sport">&ndash; Спорт</label>
+				<br>
+				<input type="checkbox" name="auto" value="auto" id="auto">
+				<label for="auto">&ndash; Автомобили</label>
+				<br>
+				<input type="checkbox" name="travel" value="travel" id="travel">
+				<label for="travel">&ndash; Путешествия</label>
+				<br>
+				</td>
+			</tr>
+			
+			<tr>
+				<th>Место жительства</th>
+				<th>Комментарии</th>
+			</tr>
+			
+			<tr>
+				<td>
+					<label for="country">Страна</label>
+					<br>
+					<select id="country">
+						<option value="Russia">Россия</option>
+						<option value="England">Англия</option>
+						<option value="USA">США</option>
+						<option value="France">Франция</option>
+						<option value="Italy">Италия</option>
+					</select>
+					<br>
+					<label for="town">Город</label>
+					<br>
+					<select id="town">
+						<option value="MSK">Москва</option>
+						<option value="SPB">Санкт-Петербург</option>
+						<option value="KZN">Казань</option>
+						<option value="KRSK">Красноярск</option>
+						<option value="HBK">Хабаровск</option>
+						<option value="IRK">Иркутск</option>
+					</select>
+				</td>
+				<td>
+					<textarea rows="5" cols="25">Превосходный сайт</textarea>
+					<br>
+					<input type="radio" name="first" value="first" id="first" checked>
+					<label for="first">Я впервые на этом сайте</label>
+					<br>
+					<input type="radio" name="notfirst" value="notfirst" id="notfirst">
+					<label for="notfirst">Я тут не в первый раз</label>
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" id="bttn">
+				<input type="submit">
+					&nbsp
+				<input type="reset" value="Очистить">
+				</td>
+			</tr>
+			
+		</table>
+	</form>
+</BODY>
+</HTML>

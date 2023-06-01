@@ -1,0 +1,25 @@
+.block{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.img1{
+	margin-top: 200px;
+
+}
+
+.img2{
+	margin-top: 100px;
+	height: 180px;
+}
+
+.img3{
+	width: 280px; 
+}
+
+
+
+h1{
+	color: black;
+	text-align: center;
+}

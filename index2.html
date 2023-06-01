@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+<link rel="stylesheet" href="style2.css"
+<title>Возвращаемое значение функции</title>
+<script>
+function sumbl()
+{var a=Number(document.form1.n1.value)
+var b=Number(document.form1.n2.value)
+var c=Number(document.form1.n3.value)
+var d=Number(document.form1.n4.value)
+var e=Number(document.form1.n5.value)
+var s=(a*1 + b*1 + c*1 + d*1 + e*1);
+return s
+}
+</script>
+</head>
+<body>
+<header>
+<h4>Сумма заработной платы </h4>
+</header>
+<section id="form">
+<form name="form1" id="form1">
+<p> Ввод
+</р><br>
+Работник1: <input type="text" name="n1" size=2><br>
+Работник2: <input type="text" name="n2" size=2><br>
+Работник3: <input type="text" name="n3" size=2><br>
+Работник4: <input type="text" name="n4" size=2><br>
+Работник5: <input type="text" name="n5" size=2><br>
+<input type="button" value=Вычислить
+onclick="document.form1.res.value=sumbl()"><br>
+сумма: <input type="text" name="res" size=4><br>
+<input type="reset">
+</form>
+<img src="https://www.budgetnik.ru/images/ART-600x408/10.jpg" width="200px" height="200px">
+</section>
+</body>
+</html>

@@ -1,0 +1,24 @@
+body{
+	color: darkred;
+	background-color: white;
+	text-align: left;
+	
+}
+.p1{
+	color: black;
+	text-indent: 10px;
+	font-weight: bolder;
+	font-size: 20px;
+}
+.p2{
+	text-align: right;
+	color: yellow;
+	background-color: green;
+}
+
+.p3{
+	text-align: justify;
+	border-style: double;
+	border-color: blue;
+}
+

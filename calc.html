@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>2ькулятор</title>
+    <style type="text/css">
+
+        html {
+         
+	        background: rgb(221, 83, 4);
+	        background: radial-gradient(circle, #0c08d4 20%, #c4ee07);
+        	background-size: cover;
+        }
+        #calculator *{
+             
+            font-size: 18px;
+            margin: auto;
+        }
+        #calculator table{
+            margin-top: 220px;
+            border: 3px solid rgb(241, 232, 232);
+            border-spacing: 6px;
+            padding: 40px;
+        }
+        #calculator table td{
+            border-spacing: 3px;
+        }
+        input.display{
+            width: 252px;
+            text-align: right;
+        }
+        td.buttons{
+         
+            border-top: 1px solid rgb(224, 202, 202);
+        }
+       
+        input[type="button"]{
+            
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            padding:0px 0px;   
+        }
+
+        .knopka{
+            background: white;
+	border-radius: 3px;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    color: #192bcf;
+        }
+        #back{
+            
+            margin-left: 0px;
+            width: 212px;
+        }
+        .red{
+            color: rgb(40, 194, 9);
+            background: #FFF0F5;
+            border-radius: 3px;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+        }
+        p{
+            font-size: 12px;
+        }
+        table{ 
+            width: 425px;
+            height: auto;
+	        margin: 100px auto;
+	        padding: 20px 20px 9px;
+	        background: #9dd2ea;
+	        background: linear-gradient(#9dd2ea, #8bceec);
+	        border-radius: 5px;
+	        box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        .display{
+            font-size: 34px;
+            width: 250px;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.2);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            color: rgb(145, 108, 8);
+        }
+        .ravno{
+            background: #f1ff92;
+            box-shadow: 0px 4px #9da853;
+	        color: #888e5f;
+        }
+
+        .ravno:hover {
+            background: #abb850;
+	        box-shadow: 0px 4px #717a33;
+	        color: #ffffff;
+}
+input[type="button"]:hover {
+	background: #9c89f6;
+	box-shadow: 0px 4px #2e02f3;
+	color: white;
+}
+    </style>
+    <script>
+    </script>
+</head>
+<body>
+    <form name="calc" id="calculator">
+        <table>
+            <tr>
+               
+                <td> <input type="text" name="input" id="input" size="24" class="display"> </td>
+            
+            </tr>
+            <tr><td>
+                <br>
+                <input type="button" name="MC" value="MC" onclick="MemoryClear()" class="red">
+               
+                <input type="button" name="MR" value="MR" onclick="MemoryRead()" class="red">
+               <input type="button" name="back" value="Backspace" onclick="Backspace()" id="back" class="red">
+               <br>
+            </td></tr>
+            <tr>
+                <td class="buttons">
+                    <br>
+                   <input type="button" name="seven" value="7" onclick="calc.input.value+='7'" class="knopka">
+                    <input type="button" name="eight" value="8" onclick="calc.input.value+='8'" class="knopka">
+                    <input type="button" name="nine" value="9" onclick="calc.input.value+='9'" class="knopka">
+                    <input type="button" name="div" value="/" onclick="calc.input.value+='/'" class="red">
+                    <input type="button" name="sqrt" value="sqrt" onclick="calc.input.value=Math.sqrt(calc.input.value)" class="knopka">
+                    <input type="button" name="MS" value="MS" onclick="MemorySave()" class="red">
+                    <br>
+                    <br>
+                    
+                    <input type="button" name="four" value="4"  onclick="calc.input.value+='4'" class="knopka">
+                    <input type="button" name="five" value="5" onclick="calc.input.value+='5'" class="knopka">
+                    <input type="button" name="six" value="6" onclick="calc.input.value+='6'" class="knopka">
+                    <input type="button" name="mul" value="*" onclick="calc.input.value+='*'" class="red">
+                    <input type="button" name="mod" value="%" onclick="calc.input.value+='%'" class="knopka">
+                    <input type="button" name="Mplus" value="M+" onclick="MemoryPlus()" class="red">
+                    <br>
+                    <br>
+                    <input type="button" name="one" value="1" onclick="calc.input.value+='1'" class="knopka">
+                    <input type="button" name="two" value="2" onclick="calc.input.value+='2'" class="knopka">
+                    <input type="button" name="three" value="3"  onclick="calc.input.value+='3'" class="knopka">
+                     <input type="button" name="sub" value="-" onclick="calc.input.value+='-'" class="red">
+                     <input type="button" name="drob" value="1/x" onclick="drobX()" class="knopka">
+                     <input type="button" name="clearEntry" value="CE" onclick="calc.input.value=''" class="red">
+                    <br>
+                    <br>
+                    <input type="button" name="zero" value="0" onclick="calc.input.value+='0'" class="knopka">
+                    <input type="button" name="+/-" value="+/-" onclick="znak(this)" class="knopka">
+                    <input type="button" name="dot" value="." onclick="calc.input.value+='.'" class="knopka">
+                    <input type="button" name="add" value="+"  onclick="calc.input.value+='+'" class="red">
+                    <input type="button" name="doit" value="=" onclick="calc.input.value=eval(calc.input.value)" class="ravno">
+                    <input type="button" name="clear" value="C" onclick="calc.input.value=''; MemoryClear()" class="red">
+
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+    <script>
+        var M=0;
+        var inp=document.getElementById("input");
+
+        function znak(obj){
+            var str=inp.value;
+            if(str.charAt(0)=="-"){
+                inp.value=str.slice(1,str.length);
+            }else{
+                str="-"+str;
+                inp.value=str;
+            }
+        }
+        function drobX(){
+            var res=eval(inp.value);
+            inp.value="1/"+res.toString();
+        }
+        function MemoryClear(){
+            M="";
+        }
+        function MemoryRead(){
+            inp.value=eval(M);
+        }
+        function MemorySave(){
+            M=eval(inp.value);
+        }
+        function MemoryPlus(){
+            M=Number(M)+eval(inp.value);
+        }
+
+        function Backspace(){
+            var str=inp.value;
+            inp.value=str.slice(0,str.length-1);
+        }
+
+
+    </script>
+</body>
+</html>
